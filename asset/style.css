@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('./img/banner_laptop.png'); /* Đường dẫn ảnh nền của bạn */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Header */
+header {
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100px;
+    color: white;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #333;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+label {
+    width: 180px;
+    font-weight: bold;
+}
+select, input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* Form Grid Layout */
+.form-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.form-grid .form-group {
+    flex: 1 1 45%; /* Mỗi cột chiếm 45% chiều rộng */
+}
+
+/* button */
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Màu xanh lá cây */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Màu xanh đậm hơn khi hover */
+}
+
+/* Giá mua và Giá bán */
+.price-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
