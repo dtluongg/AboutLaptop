@@ -1,0 +1,59 @@
+/* Mặc định cho Desktop */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive cho Tablet (kích thước màn hình từ 768px đến 1024px) */
+@media (max-width: 1024px) {
+    header {
+        height: 150px; /* Giảm chiều cao của header cho tablet */
+        padding-top: 30px;
+    }
+
+    .container {
+        max-width: 90%; /* Giảm độ rộng của container */
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .form-grid .form-group {
+        flex: 1 1 100%; /* Mỗi hàng chiếm toàn bộ chiều rộng trên tablet */
+    }
+
+    nav {
+        gap: 10px; /* Giảm khoảng cách giữa các link */
+    }
+}
+
+/* Responsive cho Mobile (kích thước màn hình từ 767px trở xuống) */
+@media (max-width: 767px) {
+    header {
+        height: 120px; /* Giảm chiều cao header hơn nữa cho mobile */
+        padding-top: 20px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column; /* Xếp link điều hướng theo cột cho mobile */
+        gap: 5px;
+    }
+
+    .form-grid {
+        flex-direction: column; /* Chuyển layout về dạng cột */
+    }
+
+    .form-group label {
+        width: 100%; /* Nhãn chiếm toàn bộ chiều rộng */
+        margin-bottom: 5px;
+    }
+
+    button {
+        font-size: 14px; /* Giảm kích thước chữ trong nút */
+    }
+}
